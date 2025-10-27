@@ -1,0 +1,33 @@
+# UTF-8
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    # Versão do arquivo (Major, Minor, Patch, Build) - Altere conforme necessário
+    filevers=(3, 0, 0, 0),
+    # Versão do produto (Major, Minor, Patch, Build) - Altere conforme necessário
+    prodvers=(3, 0, 0, 0),
+    # Deixe estes como estão
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+    ),
+  kids=[
+    StringFileInfo(
+      [
+      # Código de Idioma/Charset: 041604E4 = Português (Brasil), Latin-1
+      StringTable(
+        u'041604E4',
+        [StringStruct(u'CompanyName', u'GL System'), # Nome da sua "empresa" ou seu nome
+        StringStruct(u'FileDescription', u'Gerenciador de Backup para Nuvem Fortes'), # Descrição
+        StringStruct(u'FileVersion', u'3.0.0.0'), # Versão detalhada do arquivo
+        StringStruct(u'InternalName', u'BackupManager'), # Nome interno
+        StringStruct(u'LegalCopyright', u'© 2025 Gabriel Levi. Todos os direitos reservados.'), # Copyright
+        StringStruct(u'OriginalFilename', u'BackupManager.exe'), # Nome original
+        StringStruct(u'ProductName', u'Cloud Backup Manager'), # Nome do Produto
+        StringStruct(u'ProductVersion', u'3.0')]) # Versão do produto (mais curta)
+      ]),
+    VarFileInfo([VarStruct(u'Translation', [1046, 1252])]) # 1046 = pt-BR, 1252 = Latin-1 (Windows ANSI)
+  ]
+)
